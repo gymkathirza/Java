@@ -10,9 +10,8 @@ public class HomeController {
     
     @RequestMapping("/")
     public String index(){
-        return "index.html";
+        return "index";
     }
-
 
     @RequestMapping("/home")
     public String home(Model model){
@@ -22,11 +21,11 @@ public class HomeController {
 
     @RequestMapping("/ping")
     public String healthCheck(){
-        return "ping.html";
+        return "ping";
     }
 
     @RequestMapping("/contact")
     public String contact(){
-        return "thankyou.html";
+        return "thankyou";
     }
 }
